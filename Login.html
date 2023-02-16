@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html Lang="en" Lang="ur">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+	<title> Dragons Store </title>
+<link rel="icon" href="C:\Users\irfankhan\Desktop\website\4.jpg"></link>
+<style>
+	body {
+		background-image: url('https://cdn.wallpapersafari.com/56/38/eQ1OgM.jpg');
+		margin-left:150px;
+		margin-right:-150px;
+}
+h1 {
+	color:white;
+	font-family:algerian;
+	font-size:40px;
+	user-select:none;
+	}
+h4 {
+		color:black;
+		font-size:60px;
+		margin-top:-20px;
+		text-shadow: 4px 2px white;}
+
+.btn {
+  background-color: FAF0E6;
+  border: none;
+  cursor:pointer;
+  color: black;
+  padding: 10px 35px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  height:40px;
+  padding-top:5px;
+  padding-bottom:20px;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+  color: white;
+}
+.safi {
+  background-color: FAF0E6;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  height:12px;
+  padding-top:5px;
+  padding-bottom:20px;
+}
+
+.safi:hover {
+  background-color: #3e8e41;
+  color: white;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#FAF0E6;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropbtn {
+  background-color: white;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+  padding-right:30px;
+}
+
+.dropdown-content a:hover {background-color:Green;
+			padding-left:-300px;
+		}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: red;
+
+}
+</style>
+</head>
+<body>
+	<table style="width:70%">
+		<tr>
+			<!-- Start Line-->
+			<th><img src="https://i.pinimg.com/originals/d5/47/3b/d5473b2d6efb7f8703568993aa466856.jpg" style="height:120px;width:40%;margin-left:-150px;"></th>
+			<th><h1 style="margin-left:-170px;cursor:nodrop;">Dragons Store </h1></th>
+			<th><a href="Home Page.html" title="Dragons Store"><button class="btn"><b>Home</button></a></th>
+			<th><div class="dropdown">
+  <button class="btn" style="margin-left:-6px;"><b>Product</button>
+  <div class="dropdown-content" style="margin-top:-4px;">
+  <a href="Mobil.html" target="_blank">Mobile</a>
+  <a href="Laptop.html" target="_blank">Laptop</a>
+  </div>
+</div></th>
+			<th><a href="Contact Us.html" title="Contact Us"><button class="btn" style="margin-left:-6px;"><b>Contact</button></a></th>
+			<th><a href="About Us.html" title="About Us"><button class="btn" style="margin-left:-6px;"><b>About</button></a></th>
+			<th><a href="Login.html" title="Please Login"><button class="btn" style="margin-left:-6px;"><b>Login</button></a></th>
+			<!-- End Line-->		
+</tr>
+	</table>
+	<br>
+	<!--This style used for Login Form-->
+	<style>
+		form {
+			background-color:LightGray;
+			width:50%;
+			margin-right:-120px;
+			border:7px solid gray;
+			border-top-left-radius:20px;
+			border-top-right-radius:20px;
+			}
+		.usp {
+			font-size:24px;
+			margin-top:20px;
+}
+.pwd {
+		font-size:24px;
+		margin-top:20px;
+}
+.reset {
+	background-color:red;
+	height:50px;
+        width:150px;
+	font-size:24px;
+	font-family:Times New Roman;
+}
+.reset:hover {
+		background-color:gray;
+		color:white;
+}
+.login {
+	background-color:LightBlue;
+	height:50px;
+        width:150px;
+	font-family:Times New Roman;
+	font-size:24px;
+	}
+.login:hover {
+		background-color:Green;
+		color:white;
+}
+.inusp {
+	margin-bottom:50px;
+}
+
+input {
+	height:40px;
+        width:200px;
+	font-size:30px;
+	font-family:Times New Roman;
+}
+	</style>
+	<!--End Lines-->
+	<br>
+		
+	<form align="center" style="margin-left:230px;margin-top:-20px;width:35%">
+<br>
+			<img src="https://www.w3schools.com/howto/img_avatar.png" width="20%" height="120px;" style="border-radius:70px;"/>
+			
+			<p class="usp">User Name</p>
+			<input type="text" size=25 name="userid" style="margin-top:10px;border-style:solid;border-right-color: black;" width="80%" maxlength="20" required/>
+			<p class="pwd">Password</p>
+			<input type="password" size=25 name="pwd" style="margin-top:5px;border-style:solid;border-right-color: black;" maxlength="20" required><br>
+			<input class="reset" type="Reset"/>
+			<input class="login" type="submit" onclick="return check(this.form)" value="Login"></input>
+<br>
+	<br>
+	</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "aliijaz" && form.pwd.value == "1880171")
+{
+	return true;
+	window.open("Home Page.html");
+}
+else if(form.userid.value == "safiullah" && form.pwd.value == "1880185")
+{
+	return true;
+}
+else
+{
+	alert("This Username & Password is Invalid.")
+	return false;
+}
+}
+</script>
+</body>
+</html>
